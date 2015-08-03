@@ -27,6 +27,10 @@
                         {
                             "xml": "<feature name=\"NetworkStatus\"><param name=\"android-package\" value=\"org.apache.cordova.networkinformation.NetworkManager\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Contacts\"><param name=\"android-package\" value=\"org.apache.cordova.contacts.ContactManager\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -49,6 +53,18 @@
                         {
                             "xml": "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />",
                             "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.READ_CONTACTS\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.WRITE_CONTACTS\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.GET_ACCOUNTS\" />",
+                            "count": 1
                         }
                     ]
                 }
@@ -69,6 +85,9 @@
             "PACKAGE_NAME": "com.jsmobile.cordovaexhibition"
         },
         "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "com.jsmobile.cordovaexhibition"
+        },
+        "cordova-plugin-contacts": {
             "PACKAGE_NAME": "com.jsmobile.cordovaexhibition"
         }
     },
