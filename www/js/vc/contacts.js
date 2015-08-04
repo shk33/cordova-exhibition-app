@@ -1,11 +1,12 @@
 (function () {
-  var connectionManager = ConnectionManager.getInstance();
+  var contactsManager = ContactsManager.getInstance();
 
-  $(document).on("pageinit", "#contacts", function () {
+  $(document).on("pageinit", "#contacts", function (e) {
     e.preventDefault();
 
     $("#contactList").on("filterablebeforefilter", function (e, data) {
       e.preventDefault();
+      $("#contactList").empty();
       var filterText = data.input.val();
 
       if (filterText && filterText.length > 2) {
@@ -39,6 +40,6 @@
       }
     }
     
-    $("#contactList").listview('refresh');        
+    //$("#contactList").listview('refresh');        
   }
 })();

@@ -1,7 +1,7 @@
 (function () {
   $(document).on("pageshow","#contactDetails", function (e) {
     e.preventDefault();
-    var contactDetailsParams = $.mobile.pageData.contact || null;
+    var contactDetailsParam = $.mobile.pageData.contact || null;
     var contactDetails = JSON.parse(decodeURIComponent(contactDetailsParam));
     var i;
     var numbers = "";
