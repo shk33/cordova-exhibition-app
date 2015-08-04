@@ -35,6 +35,10 @@
                         {
                             "xml": "<feature name=\"Device\"><param name=\"android-package\" value=\"org.apache.cordova.device.Device\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Globalization\"><param name=\"android-package\" value=\"org.apache.cordova.globalization.Globalization\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -98,6 +102,9 @@
             "PACKAGE_NAME": "com.jsmobile.cordovaexhibition"
         },
         "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "com.jsmobile.cordovaexhibition"
+        },
+        "cordova-plugin-globalization": {
             "PACKAGE_NAME": "com.jsmobile.cordovaexhibition"
         }
     },
