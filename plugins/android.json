@@ -39,6 +39,10 @@
                         {
                             "xml": "<feature name=\"Globalization\"><param name=\"android-package\" value=\"org.apache.cordova.globalization.Globalization\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"InAppBrowser\"><param name=\"android-package\" value=\"org.apache.cordova.inappbrowser.InAppBrowser\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -105,6 +109,9 @@
             "PACKAGE_NAME": "com.jsmobile.cordovaexhibition"
         },
         "cordova-plugin-globalization": {
+            "PACKAGE_NAME": "com.jsmobile.cordovaexhibition"
+        },
+        "cordova-plugin-inappbrowser": {
             "PACKAGE_NAME": "com.jsmobile.cordovaexhibition"
         }
     },
