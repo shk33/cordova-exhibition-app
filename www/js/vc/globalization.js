@@ -1,7 +1,7 @@
 (function () {
   var globalizationManager = GlobalizationManager.getInstance();
 
-  $(document).on("initpage","#globalization", function (e) {
+  $(document).on("pageinit","#globalization", function (e) {
     e.preventDefault();
 
     $("#getLocaleName").on("tap", function (e) {
@@ -9,8 +9,8 @@
 
       var callback = {};
 
-      callback.onSuccess = onSuccess;
-      callback.onError = onError;
+      callback.onSuccess = handleLocaleSuccess;
+      callback.onError = handleLocaleError; 
 
       globalizationManager.getLocaleName(callback);
     });
