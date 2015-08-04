@@ -18,7 +18,7 @@ var InAppBrowserManager = (function () {
 
   return {
     getInstance: function () {
-      if (getInstance) {
+      if (!instance) {
         instance = createObject();
       }
 
